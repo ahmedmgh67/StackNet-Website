@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- JavaScript Tags 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <title>StackNet Third Party Adminstration Dashboard</title>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+	    <!-- ============================================================== -->
+	    <!-- navbar -->
+	    <!-- ============================================================== -->
+	    <div class="dashboard-header">
+	        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+	            <a class="navbar-brand" href="index.html">STACKNET</a>
+	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	                <span class="navbar-toggler-icon"></span>
+	            </button>
+	            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+	                <ul class="navbar-nav ml-auto navbar-right-top">
+	                    <li class="nav-item dropdown nav-user">
+	                        <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+	                        <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+	                            <div class="nav-user-info">
+	                                <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
+	                                <span class="status"></span><span class="ml-2">Available</span>
+	                            </div>
+	                            <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+	                            <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+	                            <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+	        </nav>
+	    </div>
+	    <!-- ============================================================== -->
+	    <!-- end navbar -->
+	    <!-- ============================================================== -->
+	    <!-- ============================================================== -->
+	    <!-- ============================================================== -->
+	    <!-- end left sidebar -->
+	    <!-- ============================================================== -->
+	    <!-- ============================================================== -->
+	    <!-- wrapper  -->
+	    <!-- ============================================================== -->
+	    <div class="dashboard-wrapper" id="JS-Loader">
+	        <div class="dashboard-influence">
+	            <div class="container-fluid dashboard-content">
+
+	                <!-- ============================================================== -->
+	                <!-- content  -->
+	                <!-- ============================================================== -->
+	                <!-- ============================================================== -->
+	                <!-- influencer profile  -->
+	                <!-- ============================================================== -->
+	                <div class="row">
+	                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+	                        <div class="card influencer-profile-data">
+	                            <div class="card-body">
+	                                <div class="row">
+	                                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
+	                                        <div class="text-center">
+	                                            <img src="assets/images/avatar-1.jpg" alt="User Avatar" class="rounded-circle user-avatar-xxl">
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-xl-10 col-lg-8 col-md-8 col-sm-8 col-12">
+	                                            <div class="user-avatar-info">
+	                                                <div class="m-b-20">
+	                                                    <div class="user-avatar-name">
+	                                                        <h2 class="mb-1" id="userName">Rehab Hospital</h2>
+	                                                    </div>
+	                                                    <div class="rating-star  d-inline-block">
+	                                                        <i class="fa fa-fw fa-star"></i>
+	                                                        <i class="fa fa-fw fa-star"></i>
+	                                                        <i class="fa fa-fw fa-star"></i>
+	                                                        <i class="fa fa-fw fa-star"></i>
+	                                                        <i class="fa fa-fw fa-star"></i>
+	                                                        <p class="d-inline-block text-dark">14 Reviews </p>
+	                                                    </div>
+	                                                </div>
+	                                                <!--  <div class="float-right"><a href="#" class="user-avatar-email text-secondary">www.henrybarbara.com</a></div> -->
+	                                                <div class="user-avatar-address">
+	                                                    <p class="border-bottom pb-3">
+	                                                        <span class="d-xl-inline-block d-block mb-2"><i class="fa fa-map-marker-alt mr-2 text-primary "></i>4045 Denver AvenueLos Angeles, CA 90017</span>
+	                                                        <span class="mb-2 ml-xl-4 d-xl-inline-block d-block">Joined date: 23 June, 2018  </span>
+	                                                        <span class=" mb-2 d-xl-inline-block d-block ml-xl-4">Male 
+	                                                                </span>
+	                                                        <span class=" mb-2 d-xl-inline-block d-block ml-xl-4">29 Year Old </span>
+	                                                    </p>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <!-- ============================================================== -->
+	                    <!-- end influencer profile  -->
+	                    <!-- ============================================================== -->
+	                    <!-- ============================================================== -->
+	                    <!-- widgets   -->
+	                    <!-- ============================================================== -->
+	                    <div class="row">
+	                        <!-- ============================================================== -->
+	                        <!-- four widgets   -->
+	                        <!-- ============================================================== -->
+	                        <!-- ============================================================== -->
+	                        <!-- total views   -->
+	                        <!-- ============================================================== -->
+	                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+	                            <div class="card">
+	                                <div class="card-body">
+	                                    <div class="d-inline-block">
+	                                        <h5 class="text-muted">Total Views</h5>
+	                                        <h2 class="mb-0"> 10,28,056</h2>
+	                                    </div>
+	                                    <div class="float-right icon-circle-medium  icon-box-lg  bg-info-light mt-1">
+	                                        <i class="fa fa-eye fa-fw fa-sm text-info"></i>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <!-- ============================================================== -->
+	                        <!-- end total views   -->
+	                        <!-- ============================================================== -->
+	                        <!-- ============================================================== -->
+	                        <!-- total followers   -->
+	                        <!-- ============================================================== -->
+	                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+	                            <div class="card">
+	                                <div class="card-body">
+	                                    <div class="d-inline-block">
+	                                        <h5 class="text-muted">Total Followers</h5>
+	                                        <h2 class="mb-0"> 24,763</h2>
+	                                    </div>
+	                                    <div class="float-right icon-circle-medium  icon-box-lg  bg-primary-light mt-1">
+	                                        <i class="fa fa-user fa-fw fa-sm text-primary"></i>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <!-- ============================================================== -->
+	                        <!-- end total followers   -->
+	                        <!-- ============================================================== -->
+	                        <!-- ============================================================== -->
+	                        <!-- partnerships   -->
+	                        <!-- ============================================================== -->
+	                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+	                            <div class="card">
+	                                <div class="card-body">
+	                                    <div class="d-inline-block">
+	                                        <h5 class="text-muted">Partnerships</h5>
+	                                        <h2 class="mb-0">14</h2>
+	                                    </div>
+	                                    <div class="float-right icon-circle-medium  icon-box-lg  bg-secondary-light mt-1">
+	                                        <i class="fa fa-handshake fa-fw fa-sm text-secondary"></i>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <!-- ============================================================== -->
+	                        <!-- end partnerships   -->
+	                        <!-- ============================================================== -->
+	                        <!-- ============================================================== -->
+	                        <!-- total earned   -->
+	                        <!-- ============================================================== -->
+	                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+	                            <div class="card">
+	                                <div class="card-body">
+	                                    <div class="d-inline-block">
+	                                        <h5 class="text-muted">Ahmed</h5>
+	                                        <h2 class="mb-0"> $5000.00</h2>
+	                                    </div>
+	                                    <div class="float-right icon-circle-medium  icon-box-lg  bg-brand-light mt-1">
+	                                        <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <!-- ============================================================== -->
+	                        <!-- end total earned   -->
+	                        <!-- ============================================================== -->
+	                    </div>
+	                    <!-- ============================================================== -->
+	                    <!-- end widgets   -->
+	                    <!-- ============================================================== -->
+	                    
+	                    <div class="row">
+	                        <!-- ============================================================== -->
+	                        <!-- campaign activities   -->
+	                        <!-- ============================================================== -->
+	                        <div class="col-lg-12">
+	                            <div class="section-block">
+	                                <h3 class="section-title">My Requests</h3>
+	                            </div>
+	                            <div class="card">
+	                                <div class="campaign-table table-responsive">
+	                                    <table class="table">
+	                                        <thead>
+	                                            <tr class="border-0">
+	                                                <th class="border-0">Company</th>
+	                                                <th class="border-0">Campaign Name</th>
+	                                                <th class="border-0">Social Platform</th>
+	                                                <th class="border-0">Min / Max Views</th>
+	                                                <th class="border-0">Status</th>
+	                                                <th class="border-0">Start Date</th>
+	                                                <th class="border-0">Action</th>
+	                                            </tr>
+	                                        </thead>
+	                                        <tbody>
+	                                            <tr>
+	                                                <td>
+	                                                    <div class="m-r-10"><img src="assets/images/dribbble.png" alt="user" width="35"></div>
+	                                                </td>
+	                                                <td>Fashion E Commerce </td>
+	                                                <td>
+	                                                    <div class="avatar-group">
+	                                                        <span><a href="#"><i class="fab fa-fw fa-facebook-square facebook-color"></i></a></span>
+	                                                        <span><a href="#"><i class="fab fa-fw fa-twitter-square twitter-color"></i></a></span>
+	                                                        <span><a href="#"><i class="fab fa-fw fa-instagram instagram-color"></i></a></span>
+	                                                        <span><a href="#"><i class="fab fa-fw fa-pinterest-square pinterest-color"></i></a></span>
+	                                                    </div>
+	                                                </td>
+	                                                <td>1,00,000 / 1,50,000</td>
+	                                                <td>70%</td>
+	                                                <td>7 Aug,2018</td>
+	                                                <td>
+	                                                    <div class="dropdown float-right">
+	                                                        <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="true">
+	                                                                <i class="mdi mdi-dots-vertical"></i>
+	                                                                     </a>
+	                                                        <div class="dropdown-menu dropdown-menu-right">
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Profit</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
+	                                                        </div>
+	                                                    </div>
+	                                                </td>
+	                                            </tr>
+	                                            <tr>
+	                                                <td>
+	                                                    <div class="m-r-10"><img src="assets/images/github.png" alt="user" width="35"></div>
+	                                                </td>
+	                                                <td>Fitness Products </td>
+	                                                <td>
+	                                                    <div class="avatar-group">
+	                                                        <span><a href="#"><i class="fab fa-fw fa-facebook-square facebook-color "></i></a></span>
+	                                                        <span><a href="#"><i class="fab fa-fw fa-twitter-square twitter-color "></i></a></span>
+	                                                    </div>
+	                                                </td>
+	                                                <td>2,50,000 / 3,50,000</td>
+	                                                <td>70%</td>
+	                                                <td>10 Aug,2018</td>
+	                                                <td>
+	                                                    <div class="dropdown float-right">
+	                                                        <a href="#" class="dropdown-toggle  card-drop" data-toggle="dropdown" aria-expanded="true">
+	                                            <i class="mdi mdi-dots-vertical"></i>
+	                                        </a>
+	                                                        <div class="dropdown-menu dropdown-menu-right">
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Profit</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
+	                                                        </div>
+	                                                    </div>
+	                                                </td>
+	                                            </tr>
+	                                            <tr>
+	                                                <td>
+	                                                    <div class="m-r-10"><img src="assets/images/dropbox.png" alt="user" width="35"></div>
+	                                                </td>
+	                                                <td>Gym Trainer Program </td>
+	                                                <td>
+	                                                    <div class="avatar-group">
+	                                                        <span><a href="#"><i class="fab fa-fw fa-facebook-square facebook-color "></i></a></span>
+	                                                        <span><a href="#"><i class="fab fa-fw fa-pinterest-square pinterest-color "></i></a></span>
+	                                                    </div>
+	                                                </td>
+	                                                <td>3,50,000 / 4,50,000</td>
+	                                                <td>70%</td>
+	                                                <td>22 Aug,2018</td>
+	                                                <td>
+	                                                    <div class="dropdown float-right">
+	                                                        <a href="#" class="dropdown-toggle  card-drop" data-toggle="dropdown" aria-expanded="true">
+	                                            <i class="mdi mdi-dots-vertical"></i>
+	                                        </a>
+	                                                        <div class="dropdown-menu dropdown-menu-right">
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Profit</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
+	                                                        </div>
+	                                                    </div>
+	                                                </td>
+	                                            </tr>
+	                                            <tr>
+	                                                <td>
+	                                                    <div class="m-r-10"><img src="assets/images/bitbucket.png" alt="user" width="30"></div>
+	                                                </td>
+	                                                <td>2018 Top Product </td>
+	                                                <td>
+	                                                    <div class="avatar-group">
+	                                                        <span><a href="#"><i class="fab fa-fw fa-pinterest-square pinterest-color"></i></a></span>
+	                                                    </div>
+	                                                </td>
+	                                                <td>4,50,000 / 5,50,000</td>
+	                                                <td>70%</td>
+	                                                <td>25 Aug,2018</td>
+	                                                <td>
+	                                                    <div class="dropdown float-right">
+	                                                        <a href="#" class="dropdown-toggle  card-drop" data-toggle="dropdown" aria-expanded="true">
+	                                            <i class="mdi mdi-dots-vertical"></i>
+	                                        </a>
+	                                                        <div class="dropdown-menu dropdown-menu-right">
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Profit</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
+	                                                        </div>
+	                                                    </div>
+	                                                </td>
+	                                            </tr>
+	                                            <tr>
+	                                                <td>
+	                                                    <div class="m-r-10"><img src="assets/images/mail_chimp.png" alt="user" width="30"></div>
+	                                                </td>
+	                                                <td>Top Dashboard Sale 2018</td>
+	                                                <td>
+	                                                    <div class="avatar-group">
+	                                                        <span><a href="#"><i class="fab fa-fw fa-facebook-square facebook-color"></i></a></span>
+	                                                        <span><a href="#"><i class="fab fa-fw fa-pinterest-square pinterest-color"></i></a></span>
+	                                                    </div>
+	                                                </td>
+	                                                <td>5,50,000 / 6,50,000</td>
+	                                                <td>70%</td>
+	                                                <td>27 Aug,2018</td>
+	                                                <td>
+	                                                    <div class="dropdown float-right">
+	                                                        <a href="#" class="dropdown-toggle  card-drop" data-toggle="dropdown" aria-expanded="true">
+	                                            <i class="mdi mdi-dots-vertical"></i>
+	                                        </a>
+	                                                        <div class="dropdown-menu dropdown-menu-right">
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Profit</a>
+	                                                            <!-- item-->
+	                                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
+	                                                        </div>
+	                                                    </div>
+	                                                </td>
+	                                            </tr>
+	                                        </tbody>
+	                                    </table>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <!-- ============================================================== -->
+	                        <!-- end campaign activities   -->
+	                        <!-- ============================================================== -->
+	                    </div>
+	                    <!-- ============================================================== -->
+	                    <!-- recommended campaigns   -->
+	                    <!-- ============================================================== -->
+	                    <div class="row">
+	                        <div class="col-lg-12">
+	                            <div class="section-block">
+	                                <h3 class="section-title">Recommended Campaigns</h3>
+	                            </div>
+	                        </div>
+	                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+	                            <div class="card campaign-card text-center">
+	                                <div class="card-body">
+	                                    <div class="campaign-img"><img src="assets/images/dribbble.png" alt="user" class="user-avatar-xl"></div>
+	                                        <div class="campaign-info">
+	                                            <h3 class="mb-1">Campaigns Name</h3>
+	                                            <p class="mb-3">Vestibulum porttitor laoreet faucibus.</p>
+	                                            <p class="mb-1">Min, Views:<span class="text-dark font-medium ml-2">2,50,000</span></p>
+	                                            <p>Payout: <span class="text-dark font-medium ml-2">$22</span></p>
+	                                            <a href="#"><i class="fab fa-twitter-square fa-sm twitter-color"></i> </a><a href="#"><i class="fab fa-snapchat-square fa-sm snapchat-color"></i></a>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+	                                <div class="card campaign-card text-center">
+	                                    <div class="card-body">
+	                                        <div class="campaign-img"><img src="assets/images/github.png" alt="user" class=" user-avatar-xl"></div>
+	                                            <div class="campaign-info">
+	                                                <h3 class="mb-1">Campaigns Name</h3>
+	                                                <p class="mb-3">Lorem ipsum dolor sit ament</p>
+	                                                <p class="mb-1">Min, Views:<span class="text-dark font-medium ml-2">1,00,000</span></p>
+	                                                <p>Payout: <span class="text-dark font-medium ml-2">$28</span></p>
+	                                                <a href="#"><i class="fab fa-instagram fa-sm instagram-color"></i> </a><a href="#"><i class="fab fa-facebook-square fa-sm facebook-color"></i></a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+	                                    <div class="card campaign-card text-center">
+	                                        <div class="card-body">
+	                                            <div class="campaign-img"><img src="assets/images/slack.png" alt="user" class="user-avatar-xl"></div>
+	                                                <div class="campaign-info">
+	                                                    <h3 class="mb-1">Campaigns Name</h3>
+	                                                    <p class="mb-3">Maecenas mattis tempor libero pretium.</p>
+	                                                    <p class="mb-1">Min, Views:<span class="text-dark font-medium ml-2">3,80,000</span></p>
+	                                                    <p>Payout: <span class="text-dark font-medium ml-2">$36</span></p>
+	                                                    <a href="#"><i class="fab fa-facebook-square fa-sm facebook-color"></i> </a><a href="#"><i class="fab fa-snapchat-square fa-sm snapchat-color"></i></a>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+	                                        <div class="card campaign-card text-center">
+	                                            <div class="card-body">
+	                                                <div class="campaign-img"><img src="assets/images/mail_chimp.png" alt="user" class="user-avatar-xl"></div>
+	                                                    <div class="campaign-info">
+	                                                        <h3 class="mb-1">Campaigns Name</h3>
+	                                                        <p class="mb-3">Proin vitae lacinia leo</p>
+	                                                        <p class="mb-1">Min, Views:<span class="text-dark font-medium ml-2">4,50,000</span></p>
+	                                                        <p>Payout: <span class="text-dark font-medium ml-2">$57</span></p>
+	                                                        <a href="#"><i class="fab fa-twitter-square fa-sm twitter-color"></i> </a><a href="#"><i class="fab fa-snapchat-square fa-sm snapchat-color"></i></a>
+	                                                        <a href="#"><i class="fab fa-facebook-square fa-sm facebook-color"></i></a>
+	                                                    </div>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                    <!-- ============================================================== -->
+	                                    <!-- end recommended campaigns   -->
+	                                    <!-- ============================================================== -->
+	                                    <!-- ============================================================== -->
+	                                    <!-- end content  -->
+	                                    <!-- ============================================================== -->
+	                                </div>
+	                            </div>
+	                            <!-- ============================================================== -->
+	                            <!-- footer -->
+	                            <!-- ============================================================== -->
+	                            <div class="footer">
+	                                <div class="container-fluid">
+	                                    <div class="row">
+	                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+	                                           Copyright © 2018 Concept. All rights reserved. Dashboard by <a href="https://colorlib.com/wp/">Colorlib</a>.
+	                                        </div>
+	                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+	                                            <div class="text-md-right footer-links d-none d-sm-block">
+	                                                <a href="javascript: void(0);">About</a>
+	                                                <a href="javascript: void(0);">Support</a>
+	                                                <a href="javascript: void(0);">Contact Us</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <!-- ============================================================== -->
+	                            <!-- end footer -->
+	                            <!-- ============================================================== -->
+	                        </div>
+	                        <!-- ============================================================== -->
+	                        <!-- end wrapper  -->
+	                        <!-- ============================================================== -->
+	                    </div>
+	                    <!-- ============================================================== -->
+	                    <!-- end main wrapper  -->
+	                    <!-- ============================================================== -->
+	                    <!-- Optional JavaScript -->
+	                    <!-- jquery 3.3.1 -->
+	                    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+	                    <!-- bootstap bundle js -->
+	                    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+						<script src="js/jQuery 3.3.1.min.js"></script>
+	                    <!-- slimscroll js -->
+	                    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+	                    <!-- main js -->
+	                    <script src="assets/libs/js/main-js.js"></script>
+	                    <!-- morris-chart js -->
+	                    <script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+	                    <script src="assets/vendor/charts/morris-bundle/morris.js"></script>
+	                    <script src="assets/vendor/charts/morris-bundle/morrisjs.html"></script>
+	                    <!-- chart js -->
+	                    <script src="assets/vendor/charts/charts-bundle/Chart.bundle.js"></script>
+	                    <script src="assets/vendor/charts/charts-bundle/chartjs.js"></script>
+	                    <!-- dashboard js -->
+	                    <script src="assets/libs/js/dashboard-influencer.js"></script>
+						<script src="./js/app.js"></script>
+</body>
+ 
+</html>

@@ -1,0 +1,920 @@
+
+.no-padding {
+    padding: 0
+}
+
+.section-padding {
+    padding: 70px 0px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.section-title p {
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: 11px 34px;
+    color: #666;
+}
+
+
+.section-title h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+    margin-top: 0;
+}
+
+.section-title h2::before {
+    position: absolute;
+    left: 50%;
+    top: 55px;
+    height: 2px;
+    width: 74px;
+    background: #207FDC;
+    content: "";
+    margin-left: -37px;
+    z-index: 1;
+}
+.about-text p
+{
+    font-size: 17px;
+}
+
+
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../images/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
+@media (min-width: 768px)
+{
+.container {
+    width: 713px;
+}
+}
+@media (min-width: 992px)
+{
+.container {
+    width: 932px;
+}
+}
+@media (min-width: 1200px)
+{
+.container {
+    width: 1140px;
+}
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #337ab7;
+    background:none;
+    border-bottom:1px solid #337ab7 ; 
+}
+.navbar-default .navbar-nav > li > a {
+     color: #FFF; 
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding:25px;
+    transition:.5s ease 
+}
+.navbar-default .navbar-nav > li > a:hover {
+     color: #337ab7;
+    border-bottom: 1px solid #337ab7;
+    padding-left: 5px;
+    font-size: 25px;
+}
+.navbar-brand > img {
+    margin-top:-30px;
+    height: 100px;
+    transition: .5s ease-in
+}
+.navbar-brand > img:hover
+{
+    width: 130px;
+    
+}
+.myCarouselServices
+{
+    background-image: url('../images/kid.jpg');
+    background-size: 100% 100%; 
+    height: 530px;
+    position: relative; 
+    
+}
+.myCarouselServicesUser
+{
+    background-color:aqua;
+    background-size: 100% 100%; 
+    height: 530px;
+    position: relative; 
+}
+.myServicesh1
+{
+    color: #337ab7 ;
+    position: absolute ; 
+    top:50% ; 
+    left:50% ; 
+    transform:translate(-50%,-100%);
+    font-size: 5em ; 
+    font-weight: bold;
+    transition: .5s ease
+}
+.myServicesh1User
+{
+    color: #337ab7 ;
+    position: absolute ; 
+    top:50% ; 
+    left:50% ; 
+    transform:translate(-50%,-50%);
+    font-size: 5em ; 
+    font-weight: bold;
+    transition: .5s ease
+}
+@media (max-width:1200px)
+{
+    .myServicesh1
+    {
+        font-size: 4em ;
+    }
+}
+@media (max-width:1200px)
+{
+    .myServicesh1User
+    {
+        font-size: 4em ;
+    }
+}
+.myServicesh1:hover
+{
+    transform:translate(-50%,-110%);
+}
+.myServivesp
+{
+    color: #FFF ;
+    position: absolute ; 
+    top:50% ; 
+    left:50% ; 
+    transform:translate(-47%,-10%);
+    font-size: 1.7em ;
+    transition: .5s ease
+}
+@media (max-width:1200px)
+{
+    .myServivesp
+    {
+        font-size: 1.1em;
+    }
+    
+}
+.myServivesp:hover
+{
+    transform:translate(-47%,-20%);    
+}
+.myServisep
+{
+    color: #999 ;
+    position: absolute ; 
+    top:50% ; 
+    left:50% ; 
+    transform:translate(-49%,170%);
+    font-size: 1em ;  
+}
+@media (max-width:1200px)
+{
+    .myServisep
+    {
+        font-size: .7em
+    }
+    
+}
+.myServisep:hover
+{
+    transform:translate(-49%,190%);
+    transition: .5s ease
+
+}
+.IconS
+{
+    position: absolute ; 
+    top:50% ; 
+    left:50% ; 
+    transform:translate(-50%,110%);
+    font-size: 35px ;    
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+.myCarouselAndForm
+{
+    position: relative ;
+    height: 530px; 
+    width: 100% ; 
+    border-bottom: 1px solid #000 ; 
+    display: none;
+     
+}
+
+.myRegisterForm
+{
+    position: absolute ; 
+    z-index:1;
+    height: 100%;
+    width:100% ; 
+    display:none
+}
+.myFormBehindCarousel
+{
+    position: absolute ; 
+    z-index:2;
+    height: 100%;
+    width:100% ; 
+    display:none;
+}
+.myCarousel
+{
+    position:absolute;
+    z-index:3; 
+    width:100% ; 
+    height: 100% ; 
+}
+.myformModel {
+    margin-top: 21px;
+}
+.forgetPassword
+{
+   float:right;
+   font-size: 80%;
+   position:relative; 
+   top:-10px 
+}
+.panel-body
+{
+    padding-top:30px    
+}
+.myLoginImg {
+    width: 52px;
+    height: 55px;
+    margin-top: 10px;
+   -webkit-border-radius: 50%;
+    -o-border-radius:50% ;
+    -moz-border-radius:50% ;
+    border-radius: 50%;
+}
+
+.btnLogOut
+{
+    margin-top: 18px;
+}
+
+@media (max-width: 767px)
+{
+.myLoginImg {
+    margin-left: 206px;
+    margin-top: -60px;
+
+    }
+.btnLogOut{
+    margin-left: 195px;
+    margin-top: -37px;
+    }  
+}
+#aboutUs
+{
+    display: none;
+}
+.ourProjects h1
+{
+    text-align: center ; 
+    padding-bottom:20px;
+    color:#337ab7;
+}
+
+.ourProjects p
+{
+    text-align: center;
+    padding-bottom:10px;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+hr
+{
+    width:60px ; 
+    height:5px ;
+    background:#337ab7;
+}
+.hrCommunity
+{
+    display: none
+}
+.myCommunity
+{
+    font-size:30px; 
+    color:#337ab7
+}
+#btnHideMe
+{
+    margin:5px 78px
+}
+@media (max-width:767px)
+{
+    .myCommunity
+    {
+       text-align: center
+    }
+    .hrCommunity
+    {
+        display: block;
+    }
+    #btnHideMe
+    {
+        margin:6px 172px ;
+    }
+
+}
+#aboutUs
+{
+    margin-top:70px;
+    margin-bottom: 50px;
+}
+.pains
+{
+    font-size: 15px ; 
+    font-weight: bold
+}
+.painsSolved
+{
+    font-size: 17px ;
+}
+#myHidenAbout
+{
+  display:none; 
+
+}
+@media(max-width:992px)
+{
+.myAboutImage
+{
+    width:310px
+    
+}
+}
+.myShudel
+{
+    padding:28px;
+    margin-top:10px; 
+}
+.contactUS
+{
+    margin-top: 50px;
+    background-color: #FFF ; 
+}
+.contactUS h3 , .contactUS p 
+{
+    text-align: center
+}
+.ourCalling
+{
+    border-right: 1px solid #333 ; 
+}
+@media(max-width:1000px)
+{
+.ourCalling
+{ 
+    border-right: none 
+}
+}
+.ourCalling p ,.last p
+{
+    color:#00f ; 
+    opacity: .6;
+}
+form
+{
+    margin-bottom: 20px; 
+}
+textarea
+{
+    width:100%;
+    height:150px;
+    margin-bottom: 13px;
+    padding: 10px;
+}
+
+#goUPButton
+{
+    display: none;
+    font-size: 35px;
+    color:#337ab7 ; 
+    position:fixed; 
+    right: 20px ;
+    bottom: 5px ;
+    cursor: pointer
+}
+.myIcons
+{
+    background-color: floralwhite; 
+    width:50px;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    right:0px ;
+    top:430px;
+    opacity:.8;
+    position: fixed ;
+    display: none ;
+    z-index: 99999 ;
+}
+.fab{
+    font-size:35px ;  
+}
+.fa-facebook-square
+{
+    color:#337ab7
+}
+.fa-whatsapp-square
+{
+    color: #25D366;
+}
+.fa-google-plus-square
+{
+    color:#e34033;
+}
+.fa-linkedin
+{
+    color:#FFF; 
+}
+.myStartLink {
+    background-color: #337ab7;
+    padding-left: 43px;
+    padding-right: 38px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    color: #FFF;
+    margin-bottom: 10px;
+    font-size: 19px;
+    position: absolute ; 
+    top:50% ; 
+    left:50% ; 
+    transform:translate(-50%,248%);
+    text-decoration: none ; 
+    transition: 1s ease  
+}
+.myStartLink:hover
+{
+    text-decoration: none ; 
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:#337ab7 ; 
+    background-color: #FFF;
+}
+.linked
+{
+     color: #337ab7  
+}
+.ico:hover
+{
+    font-size:50px;
+    transition: .5s ease
+}
+.myIcons:hover
+{
+    padding-right:50px;
+    transition: .5s ease
+}
+footer
+{
+    background-color: #333 ;
+    color:#FFF;
+    height: 50px;
+    padding:15px
+}
+#myNavBar,#ourServices,#ourBlogers
+{
+    display: none
+}
+/*VIDEO*/
+
+.myVedio
+{
+    display:block;
+    margin-bottom:70px;
+    background-color: #000;
+    padding: 35px;
+
+}
+/*End Vedio*/
+/*Modal*/
+.mod
+{
+    padding-left:50px;
+    padding-bottom: 26px;
+    background-color: #000;
+}
+table
+{
+    background-color: #FFF;
+}
+/*Table Model*/
+td,th
+{
+    padding-right: 126px;
+    padding-left: 48px;
+    padding-bottom: 16px;
+    text-align: center
+
+}
+th
+{
+    padding-top:19px;
+    padding-bottom: 19px;
+}
+@media(max-width:767px)
+{
+td, th {
+    padding-right: 34px;
+    padding-left: 37px;
+}
+    
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.ABOUT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.about-text {
+    margin-top: 100px;
+}
+
+.about-text h2 {
+    margin-bottom: 18px;
+    font-size: 26px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #207FDC;
+}
+
+.about-text h2 span {
+    color: #fff;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+}
+
+.about-image img {
+    border-radius: 5px;
+}
+
+.margin-top-c {
+    margin-top: 50px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.SERVICE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.service-area {
+    background: #F7F7F7;
+
+
+}
+
+.single-service {
+    padding: 0px 20px;
+    margin-top: 50px;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    color: #333;
+    text-align: center;
+    transition: .3s;
+}
+
+.single-service:hover.single-service h4 {
+    color: #207FDC;
+    transition: .3s;
+}
+
+.single-service:hover.single-service i {
+    color: #207FDC;
+    background: #fff;
+    border: 1px solid #207FDC;
+    transition: .3s;
+}
+
+.single-service h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.single-service i {
+    color: #fff;
+    font-size: 40px;
+    background: #207FDC;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    transition: .3s;
+    border: 1px solid #207FDC;
+}
+
+.single-service p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+* ----------------------------------------------------------------------------------------
+* 06.WHY CHOOSE US CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.why-chhose-us-area {}
+
+.single-about {
+    margin-top: 30px;
+}
+
+.single-about h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.single-about:hover.single-about h4 {
+    color: #207FDC;
+}
+
+.why-image {
+    margin-top: 30px;
+}
+.immg {
+    width: 350px;
+    height: 200px;
+}
+
+.about-icon {
+    float: left;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+.about-icon i {
+    font-size: 30px;
+    color: #207FDC;
+}
+
+.single-about p {
+    margin-bottom: 0
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 14.CONTACT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.contact-area {
+    background: url(../images/bg/contact.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.contact-area .section-title h2 {
+    color: #fff;
+}
+
+.contact-area .section-title p {
+    color: #fff;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #000;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 15px;
+    padding: 10px 7px 14px 15px;
+    border: 1px solid #f2f2f2;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+
+.form-control:focus {
+    border-color: #207FDC;
+    outline: 0;
+    box-shadow: none;
+    color: #fff;
+    background: none;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+
+.contact-form input[type='submit'] {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 25px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #207FDC;
+    background: #207FDC;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contact-form input[type='submit']:hover {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #207FDC;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.success {
+    background: #50B948 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------------------------------
+* 16.CONTACT DETAILS CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.contact-details-area {
+    background: #207FDC;
+}
+
+.single-contact-details {
+    color: #fff;
+}
+
+.single-contact-details h2 {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: .3s;
+    margin-top: 0;
+}
+
+.single-contact-details h3 {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.single-contact-details h3 i {
+    margin-right: 10px;
+}
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .navbar li a {
+        padding: 30px 11px;
+        font-size: 12px;
+    }
+    .myBrandPage {
+        text-align: center;
+    }
+    .about-text {
+        margin-top: 50px;
+    }
+    .section-title p {
+        padding: 0px 50px;
+    }
+    .single-contact-details {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .navbar-toggle .icon-bar {
+        background: #f8f8f8;
+    }
+
+    .navbar {
+        min-height: 0px;
+    }
+     .navbar li a {
+        padding: 11px 15px;
+    }
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 420px;
+    }
+    .navbar-collapse {
+        background: #333;
+    }
+    .navbar li a {
+        color: #fff;
+    }
+     .navbar li a:hover {
+        color: #000;
+    }
+    .section-title h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    .header-text {
+        margin-top: 10px;
+    }
+    .section-padding {
+        padding: 40px 0px;
+    }
+    .about-text {
+        margin-top: 30px;
+    }
+    .section-title h2::before {
+        top: 40px;
+    }
+
+}
+
+
+
+
