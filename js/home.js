@@ -80,9 +80,9 @@ function LogIn (){
         for (let index = 0; index < data.length; index++) {
             if (data[index].username == user && data[index].password== pass) {
                 console.log("Succsseful ")
-                window.location("dashboardsp.html");
+                location.replace("dashboardsp.html");
             } else {
-                alert ("logIn failed");
+                alert ("Log In failed");
             }
         }
 
