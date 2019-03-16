@@ -206,7 +206,7 @@
 	                                        <tbody class="table-ahmed">
 	                                            <tr>
 													<td>
-														<div class="m-r-10"><img src="assets/images/dropbox.png" alt="user" width="35"></img></div>
+														<div class="m-r-10"><img src="assets/images/dropbox.png" alt="user" width="35"></div>
 													</td>
 													<td id="tpaname0"></td>
 													
@@ -214,12 +214,12 @@
 													<td>70%</td>
 													<td>22 Aug,2018</td>
 													<td>
-														<button class="btn btn-primary">Track payment</button>
+														<a href="#myModal1" role="button" class="btn btn-large btn-primary" data-toggle="modal">Track payment</a>
 													</td>
 												</tr>
 												<tr>
 													<td>
-														<div class="m-r-10"><img src="assets/images/dropbox.png" alt="user" width="35"></img></div>
+														<div class="m-r-10"><img src="assets/images/dropbox.png" alt="user" width="35"></div>
 													</td>
 													<td id="tpaname1"></td>
 													
@@ -227,12 +227,12 @@
 													<td>70%</td>
 													<td>22 Aug,2018</td>
 													<td>
-														<button class="btn btn-primary">Track payment</button>
+														<a href="#myModal1" role="button" class="btn btn-large btn-primary" data-toggle="modal">Track payment</a>
 													</td>
 												</tr>
 												<tr>
 													<td>
-														<div class="m-r-10"><img src="assets/images/dropbox.png" alt="user" width="35"></img></div>
+														<div class="m-r-10"><img src="assets/images/dropbox.png" alt="user" width="35"></div>
 													</td>
 													<td id="tpaname2"></td>
 													
@@ -240,7 +240,7 @@
 													<td>70%</td>
 													<td>22 Aug,2018</td>
 													<td>
-														<button class="btn btn-primary">Track payment</button>
+														<a href="#myModal1" role="button" class="btn btn-large btn-primary" data-toggle="modal">Track payment</a>
 													</td>
 												</tr>
 	                                        </tbody>
@@ -330,22 +330,6 @@
 	                            <!-- ============================================================== -->
 	                            <!-- footer -->
 	                            <!-- ============================================================== -->
-	                            <div class="footer">
-	                                <div class="container-fluid">
-	                                    <div class="row">
-	                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-	                                           Copyright © 2018 Concept. All rights reserved. Dashboard by <a href="https://colorlib.com/wp/">Colorlib</a>.
-	                                        </div>
-	                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-	                                            <div class="text-md-right footer-links d-none d-sm-block">
-	                                                <a href="javascript: void(0);">About</a>
-	                                                <a href="javascript: void(0);">Support</a>
-	                                                <a href="javascript: void(0);">Contact Us</a>
-	                                            </div>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
 	                            <!-- ============================================================== -->
 	                            <!-- end footer -->
 	                            <!-- ============================================================== -->
@@ -363,7 +347,6 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" >Services of Service Provider Companies</h4>
             </div>
             <div class="modal-body">
                 
@@ -375,24 +358,31 @@
 
             <div class="row contact-form-design-area">
                 <div class="col-md-12 col-md-offset-2">
-                  <form class="form-horizontal">
-                <div class=" form-input">
-                        <input type="text" name="username"class="form-control" placeholder="Name"/>
-                </div>
-                <div class=" form-input">
-                        <input type="email" name="username"class="form-control"placeholder="Email"/>
-                </div>
-                <div class="form-input">
-                        <input type="text" name="username"class="form-control"placeholder="Subject"/>
-                </div>
-                <div class="form-input">
+                    <form class="form-horizontal">
+                        <div class=" form-input">
+                              <input list="company" name="select"class="form-control"placeholder="Company">
+                              <datalist id="company">
+                                   <option value="Egymid">
+                                   <option value="Alico">
+                                   <option value="Egycare">
+                              </datalist>
+                        </div>
+                        <div class=" form-input">
+                              <input list="browsers" name="select"class="form-control"placeholder="Request type">
+                              <datalist id="browsers">
+                                   <option value="Claim Form">
+                                   <option value="operation instructions">
+                                   <option value="Update price list">
+                              </datalist>
+                        </div>
+                            <div class="form-input">
 
-                        <textarea  placeholder="Message"></textarea>
-                </div>
-                <div class="form-input text-center">
-                        <input type="submit" value="Send"class="btn btn-primary"/>
-                </div>
-            </form>
+                                    <textarea  placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-input text-center">
+                                    <input type="submit" value="Send"class="btn btn-primary"/>
+                            </div>
+                    </form>
                     <!-- / END CONTACT FORM DESIGN AREA -->
                 </div>
             </div>
@@ -405,7 +395,61 @@
             </div>
         </div>
     </div>
-        <!--End Service Provider Company-->
+    </div>
+    
+    
+
+    
+    
+     <div id="myModal1" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <section id="contact" class="contact-area section-padding" data-stellar-background-ratio="0.6">
+        <div class="container">
+            <div class="row contact-form-design-area">
+                <div class="col-md-12 col-md-offset-2">
+                    <form class="form-horizontal">
+                        <div class=" form-input">
+                              <input list="company" name="select"class="form-control"placeholder="Company">
+                              <datalist id="company">
+                                   <option value="Egymid">
+                                   <option value="Alico">
+                                   <option value="Egycare">
+                              </datalist>
+                        </div>
+                        <div class=" form-input">
+                              <input list="browsers" name="select"class="form-control"placeholder="Request type">
+                              <datalist id="browsers">
+                                   <option value="Claim Form">
+                                   <option value="operation instructions">
+                                   <option value="Update price list">
+                              </datalist>
+                        </div>
+                            <div class="form-input">
+
+                                    <textarea  placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-input text-center">
+                                    <input type="submit" value="Send"class="btn btn-primary"/>
+                            </div>
+                    </form>
+                    <!-- / END CONTACT FORM DESIGN AREA -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / END CONTACT DESIGN AREA -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    </div>
 
 	                    <!-- ============================================================== -->
 	                    <!-- end main wrapper  -->
