@@ -74,6 +74,7 @@ function goUP(){
     });
 }*/
 function LogIn (){
+    alert("Log in began");
     $.getJSON("https://stacknet-api.herokuapp.com/api/sps",function l (data){
         var user = document.getElementById("login-username").value;
         var pass = document.getElementById("login-password").value;
