@@ -11,6 +11,7 @@ $(function(){
     $('.myCarousel').fadeOut(1200);
     $('.myFormBehindCarousel').slideDown(1000);    
     });
+    
     $(window).on("scroll",function(){
         if($(window).scrollTop()>=300)
         {
@@ -59,6 +60,24 @@ function goUP(){
     window.scrollTo(0,0); 
 };
 
+function loadget() {
+    var name = "isLogged";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        document.getElementById("getStartForm").innerHTML = "";
+        if (true){}
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
 /*function logIn(){
     alert("logging in");
     var user = document.getElementById("login-username").value;
@@ -70,6 +89,10 @@ function goUP(){
     });
 }*/
 
+$(function (){
+
+})
+
 function LogIn (){
     alert("Log in began");
     $.getJSON("https://stacknet-api.herokuapp.com/api/sps",function l (data){
@@ -79,10 +102,15 @@ function LogIn (){
         console.log(data[0].username + " " + data[0].username);
         for (let index = 0; index < data.length; index++) {
             if (data[index].username == user && data[index].password== pass) {
-                console.log("Succsseful ")
+                var a = data[index];
+                var b = data[index];
+                console.log("Succsseful");
                 location.replace("dashboardsp.html");
+                document.cookie = "isLogged=true";
+                document.cookie = "id=" + data[a].id;
             } else {
                 alert ("Log In failed");
+                
             }
         }
 
