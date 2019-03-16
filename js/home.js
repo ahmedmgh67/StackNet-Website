@@ -49,9 +49,7 @@ $(function(){
         $('.myRegisterForm').fadeOut(1200);
         $('.myFormBehindCarousel').slideDown(1200);
     });
-    $('#btn-login').submit(function(){
-        LogIn();
-    });
+
     $('#btn-signUp').click(function(){
         $('.myRegisterForm').fadeOut(1200);
         $('.myCarousel').slideDown(1200);
@@ -75,6 +73,7 @@ function goUP(){
 function LogIn (){
     alert("Log in began");
     $.getJSON("https://stacknet-api.herokuapp.com/api/sps",function l (data){
+        console.log(data);
         var user = document.getElementById("login-username").value;
         var pass = document.getElementById("login-password").value;
         console.log(data[0].username + " " + data[0].username);
