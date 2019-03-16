@@ -8,7 +8,8 @@
  function getUserName(){
    $.getJSON("https://stacknet-api.herokuapp.com/api/sps", function (data){
     var userna = data[0].name;
-    return userna
+    console.log(userna);
+    return userna;
    });
  }
 
