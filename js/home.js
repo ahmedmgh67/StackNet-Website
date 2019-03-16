@@ -78,13 +78,13 @@ function LogIn (){
         var user = document.getElementById("login-username").value;
         var pass = document.getElementById("login-password").value;
         console.log(data[0].username + " " + data[0].username);
-        /*for (let index = 0; index < data.length; index++) {
+        for (let index = 0; index < data.length; index++) {
             if (data[i].username == user && data[i].username) {
                 window.location("dashboard.html");
             } else {
-                alert (logInfailed);
+                alert ("logIn failed");
             }
-        }*/
+        }
 
     })
 }
