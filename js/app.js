@@ -1,6 +1,6 @@
  //import Fetch, { fetchUrl } from 'fetch';
  
- document.getElementById("userName").innerHTML = getUserName();
+  document.getElementById("userName").innerHTML = getUserName();
  var username = document.getElementById("login-username");
  var password = document.getElementById("login-password");
 
@@ -13,15 +13,22 @@
    });
  }
 
-function getRequests(){
+//function getRequests(){
   $.getJSON("https://stacknet-api.herokuapp.com/api/requests", function (data){
-    for (let index = 0; index < data.length; index++) {
+    //console.log(data);
+    for (let index = 0;  8 < index < data.length; index++) {
       var tpaname = data[i].tpaname;
       var type = data[i].type;
       var status  = data[i].status;
+      console.log(data[i].tpaname)
+      var tpa=  "tpaname" + i
+      document.getElementById(tpa).innerHTML = tpaname;
+
+
+    
     }
   })
-}
+//}
 function newRequest(){
   $.post("https://stacknet-api.herokuapp.com/api/requests", {
     "tpaname":tpaname,
