@@ -1,4 +1,5 @@
- //import Fetch, { fetchUrl } from 'fetch';
+
+//import Fetch, { fetchUrl } from 'fetch';
  var userna = "Loading..";
   //document.getElementById("userName").innerHTML = userna;
  var username = document.getElementById("login-username");
