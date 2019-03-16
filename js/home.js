@@ -78,7 +78,7 @@ function LogIn (){
         var pass = document.getElementById("login-password").value;
         console.log(data[0].username + " " + data[0].username);
         for (let index = 0; index < data.length; index++) {
-            if (data[i].username == user && data[i].username) {
+            if (data[i].username == user && dat[i].password== pass) {
                 window.location("dashboardsp.html");
             } else {
                 alert ("logIn failed");
