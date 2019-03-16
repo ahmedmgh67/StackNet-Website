@@ -1,27 +1,28 @@
  //import Fetch, { fetchUrl } from 'fetch';
- 
-  document.getElementById("userName").innerHTML = getUserName();
+ var userna = "Loading..";
+  //document.getElementById("userName").innerHTML = userna;
  var username = document.getElementById("login-username");
  var password = document.getElementById("login-password");
 
 
- function getUserName(){
+ //function getUserName(){
    $.getJSON("https://stacknet-api.herokuapp.com/api/sps", function (data){
-    var userna = data[0].name;
+    userna = data[1].name;
     console.log(userna);
-    return userna;
+    document.getElementById("userName").innerHTML = userna;
+    //return userna;
    });
- }
+ //}
 
 //function getRequests(){
   $.getJSON("https://stacknet-api.herokuapp.com/api/requests", function (data){
     //console.log(data);
     for (let index = 0;  8 < index < data.length; index++) {
-      var tpaname = data[i].tpaname;
-      var type = data[i].type;
-      var status  = data[i].status;
-      console.log(data[i].tpaname)
-      var tpa=  "tpaname" + i
+      var tpaname = data[index].tpaname;
+      var type = data[index].type;
+      var status  = data[index].status;
+      console.log(data[index].tpaname)
+      var tpa=  "tpaname" + index
       document.getElementById(tpa).innerHTML = tpaname;
 
 
