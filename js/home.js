@@ -49,11 +49,9 @@ $(function(){
         $('.myRegisterForm').fadeOut(1200);
         $('.myFormBehindCarousel').slideDown(1200);
     });
-    /*$('#btn-login').click(function(){
-        //$('.myFormBehindCarousel').fadeOut(1200);
-        //$('.myCarousel').fadeIn(1200);
-        logIn();
-    });*/
+    $('#btn-login').submit(function(){
+        LogIn();
+    });
     $('#btn-signUp').click(function(){
         $('.myRegisterForm').fadeOut(1200);
         $('.myCarousel').slideDown(1200);
@@ -73,6 +71,7 @@ function goUP(){
         console.log("error Occured");
     });
 }*/
+
 function LogIn (){
     alert("Log in began");
     $.getJSON("https://stacknet-api.herokuapp.com/api/sps",function l (data){
@@ -81,7 +80,7 @@ function LogIn (){
         console.log(data[0].username + " " + data[0].username);
         for (let index = 0; index < data.length; index++) {
             if (data[i].username == user && data[i].username) {
-                window.location("dashboard.html");
+                window.location("dashboardsp.html");
             } else {
                 alert ("logIn failed");
             }
