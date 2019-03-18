@@ -80,12 +80,7 @@
     width: 932px;
 }
 }
-@media (min-width: 1200px)
-{
-.container {
-    width: 1140px;
-}
-}
+
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #337ab7;
