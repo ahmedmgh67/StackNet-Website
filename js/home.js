@@ -82,11 +82,11 @@ function loadget() {
     });
 }*/
 
-$(function (){
+$(function(){
 
 })
 
-function LogIn (){
+function LogIn(){
     alert("Log in began");
     $.getJSON("https://stacknet-api.herokuapp.com/api/sps",function l (data){
         console.log(data);
@@ -109,7 +109,7 @@ function LogIn (){
 
     })
 }
-function register () {
+function register() {
     $.post("https://stacknet-api.herokuapp.com/api/sps", {
         "username":user,
         "password":pass,
