@@ -48,6 +48,30 @@ $(function(){
         $('.myRegisterForm').fadeOut(1200);
         $('.myCarousel').slideDown(1200);
     });
+    $('.contactWhatsH').mouseenter(function(){
+        $('.whatsappConactH').slideDown("slow");
+    });
+        $('.contactWhatsH').mouseleave(function(){
+        $('.whatsappConactH').fadeOut("slow");
+    });
+    $('.contactWhatsA').mouseenter(function(){
+        $('.whatsappConactA').slideDown("slow");
+    });
+        $('.contactWhatsA').mouseleave(function(){
+        $('.whatsappConactA').fadeOut("slow");
+    });
+    $('.contactWhatsAh').mouseenter(function(){
+        $('.whatsappConactAh').slideDown("slow");
+    });
+        $('.contactWhatsAh').mouseleave(function(){
+        $('.whatsappConactAh').fadeOut("slow");
+    });
+    $('.contactWhatsM').mouseenter(function(){
+        $('.whatsappConactM').slideDown("slow");
+    });
+        $('.contactWhatsM').mouseleave(function(){
+        $('.whatsappConactM').fadeOut("slow");
+    });
 });
 function goUP(){
     window.scrollTo(0,0); 

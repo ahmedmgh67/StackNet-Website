@@ -758,6 +758,15 @@ section.ourTeam .team {
     transition: .9s ease ; 
 
 }
+.contactWhats
+{
+    cursor: pointer ; 
+}
+.person .whatsappConact
+{
+    display: none ; 
+}
+
 
 
 
