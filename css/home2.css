@@ -71,7 +71,7 @@
 @media (min-width: 768px)
 {
 .container {
-    width: 713px;
+    width: 710px;
 }
 }
 @media (min-width: 992px)
@@ -80,8 +80,7 @@
     width: 932px;
 }
 }
-@media (min-width: 1200px)
-{
+@media (min-width: 1200px){
 .container {
     width: 1140px;
 }
@@ -185,7 +184,7 @@
 {
     .myServivesp
     {
-        font-size: 1.1em;
+        font-size: 1em;
     }
     
 }
@@ -290,6 +289,7 @@
 .btnLogOut
 {
     margin-top: 18px;
+    display: none
 }
 
 @media (max-width: 767px)
@@ -452,7 +452,9 @@ textarea
     display: none ;
     z-index: 99999 ;
 }
-.fab{
+
+.fab
+{
     font-size:35px ;  
 }
 .fa-facebook-square
@@ -479,7 +481,7 @@ textarea
     padding-bottom: 9px;
     color: #FFF;
     margin-bottom: 10px;
-    font-size: 19px;
+    font-size: 20px;
     position: absolute ; 
     top:50% ; 
     left:50% ; 
@@ -642,7 +644,7 @@ td, th {
     margin-top: 20px;
     text-transform: capitalize;
     font-weight: 600;
-    transition: .3s;
+    transition:.3s;
 }
 
 .single-service i {
@@ -913,6 +915,42 @@ td, th {
         top: 40px;
     }
 
+}
+@media(max-width:500px)
+{
+    .immg
+    {
+    width: 300px;
+    }
+    .myServivesp
+    {
+    font-size: .9em;
+    }
+    .myStartLink
+    {
+    font-size: 14px;
+    }
+    .btnLogOut 
+    {
+    margin-left: 138px;
+    }
+    .myServicesh1
+    {
+    font-size: 3em;
+    }
+    .about-text h2 {
+    font-size: 16px;
+    }
+    .about-text p {
+    font-size: 15px;
+    }
+    .section-title h2 {
+    font-size: 23px;
+    }
+    .section-title p {
+    font-size: 15px;
+    }
+    
 }
 
 
