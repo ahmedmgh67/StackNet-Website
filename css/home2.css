@@ -1,4 +1,12 @@
-
+*
+{
+    box-sizing: border-box
+}
+/*
+*--------------------------------------------------------------------
+*Headers And Titels For Any Section
+*-------------------------------------------------------------------
+*/
 .no-padding {
     padding: 0
 }
@@ -67,23 +75,6 @@
     background-repeat: no-repeat;
     background-position: center;
     margin: -100px 0 0 -100px;
-}
-@media (min-width: 768px)
-{
-.container {
-    width: 710px;
-}
-}
-@media (min-width: 992px)
-{
-.container {
-    width: 932px;
-}
-}
-@media (min-width: 1200px){
-.container {
-    width: 1140px;
-}
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -526,17 +517,6 @@ footer
 {
     display: none
 }
-/*VIDEO*/
-
-.myVedio
-{
-    display:block;
-    margin-bottom:70px;
-    background-color: #000;
-    padding: 35px;
-
-}
-/*End Vedio*/
 /*Modal*/
 .mod
 {
@@ -712,6 +692,58 @@ td, th {
 .single-about p {
     margin-bottom: 0
 }
+/*
+*
+*----------------------------------------------------------------------------------------
+* our Services
+*----------------------------------------------------------------------------------------
+*/
+.parernt
+{ 
+    margin-bottom: 50px ; 
+    margin-top: 50px
+}
+div.gallery {
+  border: 1px solid #337ab7;
+  transition:.6s ease-in
+}
+
+div.gallery:hover {
+  border: 3px solid #337ab7;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.responsive {
+  padding:6px;
+  float: left;
+  width: 50%;
+}
+
+@media only screen and (max-width: 992px) {
+  .responsive {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix{
+  clear: both;
+}
+
 /*
 *-----------------------------------------------------------------------------------------
 * our team css style
@@ -1029,10 +1061,11 @@ section.ourTeam .team {
 section.ourTeam {
     background:none ;
     }
-        
-
 }
-/**/
+
+    
+    
+    
 
 
 
