@@ -521,7 +521,7 @@ footer
     height: 50px;
     padding:15px
 }
-#myNavBar,#ourServices,#ourBlogers
+#myNavBar
 {
     display: none
 }
