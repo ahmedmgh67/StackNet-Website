@@ -107,7 +107,7 @@
 }
 .navbar-brand > img {
     margin-top:-30px;
-    height: 100px;
+    height: 95px;
     transition: .5s ease-in
 }
 .navbar-brand > img:hover
@@ -486,8 +486,9 @@ textarea
     top:50% ; 
     left:50% ; 
     transform:translate(-50%,248%);
-    text-decoration: none ; 
-    transition: 1s ease  
+    text-decoration: none; 
+    transition: 1s ease ;
+    margin-top: 10px;
 }
 .myStartLink:hover
 {
@@ -928,7 +929,7 @@ td, th {
     }
     .myStartLink
     {
-    font-size: 14px;
+    font-size: 15px;
     }
     .btnLogOut 
     {
@@ -950,7 +951,17 @@ td, th {
     .section-title p {
     font-size: 15px;
     }
+    .navbar-brand > img {
+    height: 85px;
+}
     
+}
+@media(max-width:700px)
+{
+    .navbar-brand > img {
+    height: 85px;
+    margin-top: -26px;
+
 }
 /**/
 

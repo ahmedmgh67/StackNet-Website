@@ -24,14 +24,6 @@ $(function(){
            $('.myIcons').hide(1200);
             $('#goUPButton').slideUp(1200); 
         }
-        if($(window).scrollTop()>=350)
-        {
-            $('#ourServices').slideDown(1200); 
-        }
-        if($(window).scrollTop()>=1100)
-        {
-            $('#ourBlogers').slideDown(1200);
-        }
     }) ;
         $('#btnShowMore').click(function(){
             $('#btnShowMore').hide(1000);
