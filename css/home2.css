@@ -436,7 +436,8 @@ textarea
     position:fixed; 
     right: 20px ;
     bottom: 5px ;
-    cursor: pointer
+    cursor: pointer;
+    z-index: 999999;
 }
 .myIcons
 {
