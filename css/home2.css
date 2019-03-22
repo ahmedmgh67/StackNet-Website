@@ -771,7 +771,7 @@ td, th {
     border-color: #207FDC;
     outline: 0;
     box-shadow: none;
-    color: #fff;
+    color: #000;
     background: none;
     -webkit-transition: .3s;
     transition: .3s
