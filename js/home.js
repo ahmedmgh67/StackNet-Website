@@ -122,7 +122,7 @@ function LogIn(){
                 var a = data[index];
                 var b = data[index];
                 console.log("Succsseful");
-                location.replace("dashboardsp.html");
+                location.replace("https://stacknet-dashboard.herokuapp.com");
                 document.cookie = "isLogged=true";
                 document.cookie = "id=" + data[a].id;
             } else {
