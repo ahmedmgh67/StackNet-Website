@@ -35,19 +35,19 @@ $(function(){
             $('#myHidenAbout').hide(1000);
             $('#myPara').css({textAlign:"center"});
         });
-    $('#noAccount').click(function(){
+    /*$('#noAccount').click(function(){
        $('.myFormBehindCarousel').fadeOut(1200);
         $('.myRegisterForm').slideDown(1200);
-    });
-    $('#signInNow').click(function(){
+    });*/
+    /*$('#signInNow').click(function(){
         $('.myRegisterForm').fadeOut(1200);
         $('.myFormBehindCarousel').slideDown(1200);
-    });
+    });*/
 
-    $('#btn-signUp').click(function(){
+    /*$('#btn-signUp').click(function(){
         $('.myRegisterForm').fadeOut(1200);
         $('.myCarousel').slideDown(1200);
-    });
+    });*/
     $('.contactWhatsH').mouseenter(function(){
         $('.whatsappConactH').slideDown("slow");
     });
