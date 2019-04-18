@@ -373,6 +373,15 @@
     margin-top: 18px;
     display: none
 }
+.logBt
+{
+     width: 49% ;
+}
+.closeForm
+{
+
+    width: 49% ; 
+}
 
 @media (max-width: 767px)
 {
