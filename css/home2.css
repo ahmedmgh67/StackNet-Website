@@ -77,28 +77,120 @@
     margin: -100px 0 0 -100px;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #337ab7;
-    background:none;
-    border-bottom:1px solid #337ab7 ; 
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width:0px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index:999999; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #FFF; /* White*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
-.navbar-default .navbar-nav > li > a {
-     color: #FFF; 
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: capitalize;
-    padding:25px;
-    transition:.5s ease 
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  color: blue;
 }
-.navbar-default .navbar-nav > li > a:hover {
-     color: #337ab7;
-    border-bottom: 1px solid #337ab7;
-    padding-left: 5px;
-    font-size: 25px;
+.sidebar .navclik:hover{
+    background-color: #000 ; 
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.header {
+  overflow: hidden;
+  background-color: #000;
+  padding:8px; 
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  color: azure
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
+/* Change the background color on mouse-over */
+.header-right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+@media screen and (max-width: 800px) {
+  .navOnFullScreen {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .openbtn {
+    display: none;
+  }
 }
 .navbar-brand > img {
     margin-top:-30px;
-    height: 95px;
+    height: 85px;
     transition: .5s ease-in
 }
 .navbar-brand > img:hover
