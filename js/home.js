@@ -23,20 +23,10 @@ $(function(){
             $('#goUPButton').slideUp(1200); 
         }
     }) ;
-        $('#btnShowMore').click(function(){
-            $('#btnShowMore').hide(1000);
-            $('#myHidenAbout').show(1000);
-            $('#myPara').css({textAlign:"left"})
-        });
-        $('#btnHideMe').click(function(){
-            $('#btnShowMore').show(1000);
-            $('#myHidenAbout').hide(1000);
-            $('#myPara').css({textAlign:"center"});
-        });
-    /*$('#noAccount').click(function(){
+    $('.closeForm').click(function(){
        $('.myFormBehindCarousel').fadeOut(1200);
-        $('.myRegisterForm').slideDown(1200);
-    });*/
+        $('.myCarousel').fadeIn(1200);
+    });
     /*$('#signInNow').click(function(){
         $('.myRegisterForm').fadeOut(1200);
         $('.myFormBehindCarousel').slideDown(1200);
