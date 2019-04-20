@@ -266,10 +266,11 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     position: relative;
 }
-.p1-gradient-bg, .primary-btn, .header-btn, .testimonial-area .overlay-bg, .single-service:hover, .about-right .overlay-bg {
+.primary-btn{
     background-image: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
     background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
     background-image: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+    background-image: linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
 }
 .fullscreen
 {
