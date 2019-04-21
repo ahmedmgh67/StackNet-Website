@@ -443,6 +443,31 @@ hr
     width:310px
     
 }
+
+}
+.about-image {
+    margin-top: 89px;
+    margin-left: 26px;
+}
+.about-image2
+{
+    margin-top: 89px;
+    margin-left: 170px
+}
+@media (max-width:1000px)
+{
+    .about-image {
+        display: none
+}
+.about-image2
+{
+    display: none
+}
+.why-image
+{
+    display: none
+        
+}
 }
 .myShudel
 {
@@ -740,7 +765,7 @@ td, th {
     margin-top: 30px;
 }
 .immg {
-    width: 350px;
+    width: 300px;
     height: 200px;
 }
 
